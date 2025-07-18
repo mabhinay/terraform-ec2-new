@@ -11,7 +11,7 @@ terraform {
 resource "aws_instance" "web" {
   ami           = "ami-0150ccaf51ab55a51"
   instance_type = "t3.micro"
-  key_name      = "key"
+  key_name      = "docker"
   tags = {
     Name = "webserver"
   }
